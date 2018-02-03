@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <style>
+    #btn2 {
+
+  background: #ffce00;
+        }
+
+#btn2:hover {
+  background: #ff9900;
+
+}
+
+            #btn1 {
+
+  background: #ff0000;
+        }
+
+#btn1:hover {
+  background: #c60000;
+
+}
+
+        
+    
+    </style>
+</head>
+<body>
+    <div>
+        <div class="grid-box">
+        <h1>漁船追蹤分析系統</h1>
+<!--        <p id=p4-p>禁漁區與漁船軌跡。停留較久的船，可能有違法捕魚之嫌</p>-->
+        
+        <h2><input id="btn1" type="button">漁獲紀錄點</input>
+            <input id="btn2" type="button">漁船航跡</input></h2>
+        </div>
+
+        <div id="gmap" style="height:520px;"></div>
+        <script src="gmap/gmap.js"></script>
+
+        <!--標記能群集的外掛-->
+<!--
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+            var markerCluster = new MarkerClusterer(map, markers, {
+                        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+        </script>
+-->
+
+        <!--加入個人Key的API，同時可以在這裡強制顯示語言-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHao1N9YfzitGdDvPRzVZN9HNiCu00p7Y&language=zh-tw&region=tw&callback=initMap"></script>
+
+    </div>
+
+<style>
+
+
+</style>
+
+
+</body>
+</html>
